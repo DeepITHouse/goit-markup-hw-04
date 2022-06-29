@@ -1,0 +1,462 @@
+/* Important */
+:root{
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --white-text-color: #FFFFFF;
+    --accent-color: #2196F3;
+    --bg-dark-color: #2F303A;
+    --add-bg-color: #E5E5E5;
+    --light-bg-color: #F5F4FA;
+    --card-item: 3;
+    --card-gap: 30px;
+}
+
+p, h1, h2,
+h3, h4, h5, h6{
+    margin: 0px;
+}
+
+ul{
+    margin: 0;
+    padding-left: 0;
+}
+
+a{
+    color: currentColor;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-text-color);
+    margin: 0;
+}
+
+button{
+    cursor: pointer;
+    font-family: inherit;
+}
+
+img{
+    display: block;
+}
+
+address{
+    font-style: normal;
+}
+
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.list{
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.text-black {
+    color: #212121
+}
+
+.text-white{
+    color: var(--white-text-color);
+}
+
+.card-set{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* ------Header/Logo------ */
+
+.header{
+    border-bottom: 1px solid #ECECEC;
+    background-color: var(--white-text-color);
+}
+
+.header-container{
+    align-items: center;
+    display: flex;
+}
+
+.header-logo{
+    color: var(--accent-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+/* ----Menu / Contacts */
+
+.nav-site{
+    align-items: center;
+    display: flex;
+}
+
+.site-menu{
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    list-style-type: none;
+}
+
+.site-menu, .contacts-menu{
+    display: flex;
+}
+
+.site-list:not(:last-child){
+    margin-right: 50px;
+}
+
+.nav-link{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+}
+
+.contacts-menu{
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-left: auto;
+}
+
+.link:hover,
+.link:focus{
+    color: var(--accent-color);
+}
+
+.current{
+    color: var(--accent-color);
+}
+
+/* -----MainContent / HERO------ */
+
+.hero{
+    background-color: var(--bg-dark-color);
+    padding: 200px 0;
+}
+
+.hero-title{
+    color: var(--white-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 696px;
+}
+
+.hero-btn{
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus{
+    background-color: #1184e2;
+    box-shadow: 0px 4px 4px rgba(35, 82, 184, 0.192);
+}
+
+.btn-style{
+    color: var(--white-text-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    border-width: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
+/* -- Occupation -- */
+
+.tasks-section{
+    box-sizing: border-box;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.spot-no{
+    display: flex;
+}
+
+.spot-list{
+    width: 270px;
+    list-style: none;
+}
+
+.spot-list:not(:last-child){
+    margin-right: 30px;
+}
+
+.tasks-title{
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.tasks-text{
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* ------ Portfolio buttons ------ */
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.menu-style {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.menu-style .total-list:not(:last-child){
+    margin-right: 8px;
+}
+
+.main-btns{
+    color: var(--primary-text-color);
+    background-color: var(--light-bg-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 6px 22px 6px 22px;
+    border: 0px;
+}
+
+.main-btns:hover,
+.main-btns:focus{
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+/* ------ Gallery ------ */
+
+.gallery-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.gallery-item:not(:nth-child(3n)){
+    margin-right: 30px;
+}
+
+.gallery-item:nth-child(-n + 6) {
+    margin-bottom: 30px;
+}
+
+.gallery-pic{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.poster{
+    padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+}
+
+.gallery-list h2{
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+}
+
+.gallery-list p{
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+}
+
+/*------ What we do ------*/
+
+.wwd-section{
+    padding-bottom: 94px;
+}
+
+.wwd-title{
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.wwd-list{
+    text-align: center;
+    display: flex;
+}
+
+.wwd-item{
+    text-align: center;
+}
+
+.wwd-item:not(:last-child){
+    margin-right: 30px;
+}
+
+/*------ Team ------*/
+
+.team-section{
+    background-color: var(--light-bg-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team-title{
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.team-list{
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+.team-item{
+    background-color: var(--white-text-color);
+    list-style: none;
+}
+
+.team-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.desc{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.text-title{
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+}
+
+.team-prof{
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+
+/*------ Footer ------*/
+
+.footer{
+    background-color: var(--bg-dark-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-logo{
+    font-family: 'Raleway';
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.adress{
+    color: var(--white-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.footer-contacts:not(:last-child){
+    margin-bottom: 9px;
+}
+
+.footer-mail{
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.footer-tel{
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    display: inline-block;
+}
